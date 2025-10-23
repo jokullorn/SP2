@@ -1,12 +1,17 @@
-public abstract class PhysicalTitle extends Title {
-    protected int copies;
+public class PrintedBook extends PhysicalTitle {
+    private int pages;
 
-    public PhysicalTitle(String title, String literatureType, int copies) {
-        super(title, literatureType);
-        this.copies = copies;
+    public PrintedBook(String title, String literatureType, int copies, int pages) {
+        super(title, literatureType, copies);
+        this.pages = pages;
     }
 
-    public int getCopies() {
-        return copies;
+    public int getPages() {
+        return pages;
+    }
+
+    @Override
+    public double calculatePoints() {
+        return pages * convertLiteratureType() * copies;
     }
 }
