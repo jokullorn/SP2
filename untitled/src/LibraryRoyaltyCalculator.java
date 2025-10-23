@@ -25,26 +25,26 @@ public class LibraryRoyaltyCalculator {
         Author harukiMurakami = new Author("Haruki Murakami");
 
         // Add various types of books
-        PrintedBook fictionBook = new PrintedBook("Norwegian Wood", "SKØN", 200, 296);
+        PrintedBook fictionBook = new PrintedBook("1Q84", "SKØN", 200, 816);
         harukiMurakami.addTitle(fictionBook);
 
-        AudioBook audioBook = new AudioBook("Kafka on the Shore (Audio)", "SKØN", 150, 960);
+        AudioBook audioBook = new AudioBook("Men Without Women (Audio)", "SKØN", 150, 438);
         harukiMurakami.addTitle(audioBook);
 
-        PrintedBook nonFictionBook = new PrintedBook("What I Talk About When I Talk About Running", "FAG", 120, 180);
+        PrintedBook nonFictionBook = new PrintedBook("What I Talk About When I Talk About Running", "FAG", 120, 192);
         harukiMurakami.addTitle(nonFictionBook);
 
         System.out.println(harukiMurakami.getName() + ": " + harukiMurakami.getRoyalties());
 
         // Test with children's books
-        Author astridLindgren = new Author("Astrid Lindgren");
-        PrintedBook pictureBook = new PrintedBook("Pippi Longstocking", "BI", 300, 160);
-        astridLindgren.addTitle(pictureBook);
+        Author andersMatthesen = new Author("Anders Matthesen");
+        PrintedBook pictureBook = new PrintedBook("Ternet Ninja", "BI", 300, 248);
+        andersMatthesen.addTitle(pictureBook);
 
-        AudioBook childrenAudio = new AudioBook("Emil of Lönneberga (Audio)", "BI", 180, 120);
-        astridLindgren.addTitle(childrenAudio);
+        AudioBook childrenAudio = new AudioBook("Emil of Lönneberga (Audio)", "BI", 180, 262);
+        andersMatthesen.addTitle(childrenAudio);
 
-        System.out.println(astridLindgren.getName() + ": " + astridLindgren.getRoyalties());
+        System.out.println(andersMatthesen.getName() + ": " + andersMatthesen.getRoyalties());
 
         // Test online titles
         System.out.println("\n=== Testing Online Titles ===\n");
