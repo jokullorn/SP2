@@ -14,7 +14,7 @@ public class LibraryRoyaltyCalculator {
         olgaRavn.addTitle(celestineAudio);
 
         // Add another book for testing
-        PrintedBook anotherBook = new PrintedBook("De ansatte", "SKØN", 100, 136);
+        PrintedBook anotherBook = new PrintedBook("De ansatte", "SKØN", 100, 134);
         olgaRavn.addTitle(anotherBook);
 
         // Calculate and display royalties
