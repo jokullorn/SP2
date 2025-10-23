@@ -51,7 +51,7 @@ public class LibraryRoyaltyCalculator {
 
         Author onlineAuthor = new Author("Digital Writer");
 
-        // Test EBook (from the example in the assignment)
+        // Test EBook 
         // 360,000 characters, non-fiction, not illustrated
         // 97 availability, 50 reach, 205 use
         EBook ebook = new EBook("Digital Non-Fiction", "FAG", 97, 50, 205, 360000, false);

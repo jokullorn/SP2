@@ -19,8 +19,6 @@ public class Author {
     }
 
     public void addTitle(String name) {
-        // This method signature matches the diagram but needs clarification
-        // In practice, we need to pass a Title object
     }
 
     public void addTitle(Title title) {
